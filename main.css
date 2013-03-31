@@ -1,0 +1,405 @@
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text);
+
+/*clearfix*/
+.group:before,
+.group:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.group:after {
+    clear: both;
+}
+
+/*text styles --global*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	font-family: 'Crimson Text', serif;
+	margin: 40px;	
+}
+
+#main {
+	width:870px;
+	margin: 0 auto;
+}
+
+
+
+h1, h2, h3{
+	text-align: center;
+	margin: 20px;
+	line-height: 110%;
+}
+
+h1,h2, h4, .alert {
+	font-weight: bold;
+	line-height: 110%;
+}
+
+h1 {
+	font-size: 3.5em;
+
+}
+
+h2 {
+	font-size: 3em;
+	margin: 0px 0 20px 0;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1.5em;
+	color:  #369;
+}
+
+p {
+	font-size: 1em;
+	line-height: 130%;
+}
+
+a {
+	text-decoration: none;
+	color: #369;
+}
+
+a:hover {
+	color: #18afe0;
+}
+
+cite, blockquote {
+	font-style: italic;
+}
+
+.alert {
+	color: red;
+}
+
+header, #customers, #customers h2, #company-standards,#rework-book, #our-stuff   {
+	position: relative;
+}
+
+/*text styles --local*/
+/*nav top*/
+nav {
+	float: right;
+}
+
+nav li {
+	display: inline;
+	font-size: 1em;
+	padding: 5px;
+}
+
+#sign-in {
+	color: #18afe0;
+}
+
+#sign-in:hover {
+	color: #369;
+}
+
+/*faux javasript*/
+#weekday {
+	color: grey;
+}
+
+/*header*/
+header {
+	margin: 50px 20px ;
+}
+
+header img {
+	display: block;
+	clear: both;
+	margin: 0 auto 10px auto;
+}
+	/*header - products*/
+	.product-button {
+		float: left;
+		width: 190px;
+		height: 250px;
+		text-align: center;
+		padding: 20px 10px;
+		margin: 10px;
+		border: solid 0px #888;
+		border-radius: 5px;
+		box-shadow: 0 0 1px  #888;	
+		background: -moz-linear-gradient(top, rgba(153,153,153,0) 0%, rgba(153,153,153,0.10) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(153,153,153,0)), color-stop(100%,rgba(153,153,153,0.10))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(153,153,153,0) 0%,rgba(153,153,153,0.10) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(153,153,153,0) 0%,rgba(153,153,153,0.10) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(153,153,153,0) 0%,rgba(153,153,153,0.10) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(153,153,153,0) 0%,rgba(153,153,153,0.10) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#1a999999',GradientType=0 ); /* IE6-9 */
+	}
+
+	.product-button:hover {
+		box-shadow: 0 0 5px 2px #888;
+	}
+
+	.product-button a {
+		text-decoration: underline;
+	}
+
+	.product-button > * {
+		padding: 5px 0px;
+	}
+
+	#products div:first-child {
+		margin-left: 100px;
+	}
+
+	#products div:last-child {
+		margin-right: 0;
+	}
+
+/*Section Divide*/
+.main-hr {
+	border: 0;
+	color: transparent;
+	background: white url("img/img-hr.png") no-repeat scroll 50% 50%;
+	height: 12px;
+	margin: 40px 0;	
+}
+
+/*Customers Section*/
+#customers > p, #rework-book blockquote {
+	font-size: 1.4em;
+	color: grey;
+	padding: 10px 0;
+}
+
+	/*position 'meet some customers' image*/
+	#cust-aside {
+		position: absolute;
+		top: 190px;
+		left: -150px;
+	}
+
+	#cust-aside-img {
+		position: absolute;
+		display: block;
+		height: 100px;
+		width: 155px;
+		background: url('img/img-customers.png') no-repeat 0 0;
+		top: -100px;
+		left: 0px;
+	}
+
+	#cust-aside-img:hover {
+		position: absolute;
+		display: block;
+		height: 100px;
+		width: 155px;
+		background: url('img/img-customers.png') no-repeat 0px -100px;
+		top: -100px;
+		left: 0px;
+	}
+
+	#cust-aside img /*arrow*/ {
+		position: absolute;
+		top: -80px;
+		left: 140px;
+	}
+
+#world-img {
+	float: right;
+	margin:10px 10px 10px 30px;
+}
+#customers-img {
+	margin-top: 20px;
+}
+
+/*Company standards*/
+#company-standards p:nth-child(odd){
+	font-size: 110%;
+	font-weight: bold;
+	color: red;
+}
+
+#company-standards li {
+	padding: 10px;
+}
+
+#stnds-list-1 {
+	float:left;
+	width: 45%;
+	list-style: none;
+	margin-left: 30px;
+	counter-reset: level1;
+	margin-right: 20px;
+}
+
+#stnds-list-1 li:before {
+	position: absolute;
+    content: counter(level1) " "; /*Instead of ". " */
+    counter-increment: level1;
+    left: 0px;
+    font-size: 3em;
+    color: grey;
+}
+
+	/*standards list 2*/
+	#stnds-list-2 {
+		width: 45%;
+		float: left;
+		list-style: none;
+		margin-left: 30px;
+		margin-right: 0;
+	}
+
+	#stnds-list-2 li:before {
+	position: absolute;
+    content: counter(level1) " "; /*Instead of ". " */
+    counter-increment: level1;
+    left: 440px;
+    font-size: 3em;
+    color: grey;
+}
+
+/*rework book section*/
+	.crumple-paper {
+		position: absolute;
+	}
+
+	#rework-book-img {
+		float:left;
+		display: block;
+	}
+
+	blockquote {
+		float: left;
+		width: 65%;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	blockquote cite {
+		display: block;
+		font-style: normal;
+		font-size: 65%;
+		color: #000;
+		margin-top: 20px;
+	}
+
+	#rework-crumple-link {
+		position: absolute;
+		left: 860px;
+		width: 143px;
+	}
+
+		#rework-crumple-img {
+			top: -130px;
+			left: -20px;
+		}
+
+		#rework-arrow-img {
+			top: -60px;
+			left: -80px;
+		}
+/*our offers section*/
+.product-lower {
+		float: left;
+		width: 190px;
+		height: 250px;
+		text-align: center;
+		padding: 20px 10px;
+		margin: 10px;
+}
+.product-lower a {
+	color: #000;
+}
+
+.product-lower a:hover {
+	color: #369;
+}
+
+.product-lower > * {
+	padding: 5px;
+}
+
+.product-lower p:last-child {
+	font-size: 90%;
+	color: #888;
+}
+
+#first-product {
+	margin-left: 130px;
+}
+
+/*#our-offers div:first-child {
+		margin-left: 100px;
+	}*/
+
+#our-offers div:last-child {
+		margin-right: 0;
+	}
+
+/*our-stuff*/
+#our-stuff {
+	text-align: center;
+}
+
+#our-stuff * {
+	padding: 5px;
+}
+
+#our-stuff a {
+		color: #000;
+	}
+
+#our-stuff a:hover {
+		color: #369;
+	}
+
+	#our-stf-col1, #our-stf-col2 {
+		float: left;
+		width: 40%;
+		margin: 20px;
+		color:grey;
+	}
+
+	#our-stf-col1 {
+		margin-left: 80px;
+	}
+
+	.col-head {
+		color: red;
+		font-weight: bold;
+		border-bottom: solid 1px #000;
+	}
+
+/*footer*/
+footer > nav {
+	float: none;
+	text-align: center;
+	padding: 10px;
+}
+
+footer > nav * {
+	padding: 10px;
+}
+
+#copyright {
+	font-size: .75em;
+}
+
+#copyright p {
+	margin: 0 auto;
+	text-align: center;
+	color: #999;
+}
+
+#copyright a:hover {
+	text-decoration: underline;
+}
+
